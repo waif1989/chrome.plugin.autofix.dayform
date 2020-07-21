@@ -22,6 +22,10 @@ module.exports = appInfo => {
   const userConfig = {
     // myAppName: 'egg',
   };
+  config.cors = {
+    origin: '*',
+    allowMethods: 'GET, POST',
+  };
 
   return {
     ...config,
