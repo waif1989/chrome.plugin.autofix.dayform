@@ -1,12 +1,9 @@
-try {
-  const evt = document.createEvent('HTMLEvents');
-  evt.initEvent('input', true, true);
+(function() {
+  try {
+    const evt = document.createEvent('HTMLEvents');
+    evt.initEvent('input', true, true);
 
-  chrome.storage.local.get(['injectWenJuanCode'], function (res) {
-    if (res.injectWenJuanCode) {
-      eval(res.injectWenJuanCode)
-      return;
-    }
+    console.log('=====----009993333');
 
     const form = {
       titleWenJuan: '',
@@ -59,6 +56,7 @@ try {
       } catch (e) {}
 
     })
-  });
 
-} catch {}
+  } catch {}
+})();
+
