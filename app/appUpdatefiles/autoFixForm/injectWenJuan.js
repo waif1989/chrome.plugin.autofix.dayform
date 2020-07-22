@@ -3,8 +3,6 @@
     const evt = document.createEvent('HTMLEvents');
     evt.initEvent('input', true, true);
 
-    console.log('=====----009993333');
-
     const form = {
       titleWenJuan: '',
       userName: '',

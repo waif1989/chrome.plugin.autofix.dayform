@@ -1,6 +1,11 @@
 const pluginId = chrome.runtime.id;
 chrome.storage.local.get('autoFixFormVersion', function (data) {
-  document.getElementById('version').innerText = data.autoFixFormVersion
+  const currentVersion = chrome.runtime.getManifest().version;
+  if (data.autoFixFormVersion) {
+    document.getElementById('version').innerText = data.autoFixFormVersion
+  } else {
+    document.getElementById('version').innerText = currentVersion
+  }
 });
 
 let autoFixPhone = document.getElementById('autoFixPhone');

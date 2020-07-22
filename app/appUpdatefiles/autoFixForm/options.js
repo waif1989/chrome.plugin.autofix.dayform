@@ -55,7 +55,7 @@
       location: '',
       position: '',
     };
-  
+
     chrome.storage.sync.get(['title', 'name', 'department', 'location', 'position'], function(res) {
       try {
         form.title = res.title || '';
@@ -63,7 +63,7 @@
         form.department = res.department || '';
         form.location = res.location || '';
         form.position = res.position || '';
-    
+
         // $('#pluginsTitle').val(form.title);
         $('#leaderName').val(form.name);
         if (form.department !== '') {
@@ -77,19 +77,19 @@
         }
       } catch {}
     })
-  
+
     $('.radioDepartment').click(function() {
       form.department = this.value + '';
     })
-  
+
     $('.radioLocation').click(function() {
       form.location = this.value + '';
     })
-  
+
     $('.radioPosition').click(function() {
       form.position = this.value + '';
     })
-  
+
     $('#updatePluginClear').click(function() {
       Object.keys(form).map(function(key) {
         chrome.storage.sync.remove(key);
@@ -97,7 +97,7 @@
       alert('清除成功');
       window.location.reload();
     })
-  
+
     $('#updatePluginInfo').click(function() {
       if (form.department === '') {
         alert('请选择部门');
@@ -117,7 +117,7 @@
       } else {
         form.name = $('#leaderName').val();
       }
-  
+
       form.title = '点我:自动填充协同申请表';
       // if ($('#pluginsTitle').val() === '') {
       //   form.title = `协同自动填表:研发二部`
