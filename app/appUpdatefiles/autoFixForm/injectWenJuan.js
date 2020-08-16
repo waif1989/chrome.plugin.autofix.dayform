@@ -50,7 +50,7 @@
           }, 300)
         }
         document.querySelectorAll('.question-body')[4].querySelectorAll('.checkbox-option')[0].children[0].click(); // 用工方式
-        document.querySelectorAll('.question-body')[7].querySelectorAll('.checkbox-option')[0].children[0].click(); // 本周个人情况是否符合公司《到岗上班承诺书》内容要求
+        document.querySelectorAll('.question-body')[6].querySelectorAll('.checkbox-option')[0].children[0].click(); // 本周个人情况是否符合公司《到岗上班承诺书》内容要求
       } catch (e) {}
 
     })

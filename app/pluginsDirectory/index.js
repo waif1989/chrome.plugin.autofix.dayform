@@ -1,7 +1,7 @@
 'use strict';
 
 exports.PRODUCTIONS_VERSION = {
-  autoFixForm: '1.0.0',
+  autoFixForm: '1.1.0',
 };
 
 exports.PRODUCTIONS = {
