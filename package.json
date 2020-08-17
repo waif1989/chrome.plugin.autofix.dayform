@@ -25,7 +25,7 @@
     "node": ">=10.0.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=egg-server-chrome.plugins.autofixform.update",
+    "start": "egg-scripts start --daemon --workers=2 --title=egg-server-chrome.plugins.autofixform.update",
     "stop": "egg-scripts stop --title=egg-server-chrome.plugins.autofixform.update",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
